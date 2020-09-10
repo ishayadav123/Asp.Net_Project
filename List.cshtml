@@ -1,0 +1,21 @@
+﻿@model List<WebAppRegisLogin.DBModel.User>
+@{
+    ViewBag.Title = "List";
+}
+
+<table class="table table-hover">
+    <tr>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Email</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>@item.FirstName</td>
+    <td>@item.LastName</td>
+    <td>@item.Email</td>
+
+</tr>
+    }
+</table>
